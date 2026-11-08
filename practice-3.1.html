@@ -19,7 +19,7 @@
 
                 <nav class="nav">
                     <a href="/home">Home</a>
-                    <a href="/tax">Tax Filing</a>
+                    <a href="/Users/mackookair/Desktop/html-css-practice/tax-filing.html">Tax Filing</a>
                     <a href="/payment">Payments</a>
                     <a href="/support">Support</a>
                     <a href="/about">About</a>
@@ -133,6 +133,43 @@
                 </div>
                 <br>
                 <div class="container">
+                    <h2>Register a Payment</h2>
+                    <form>
+                        <fieldset>
+                        <h4>Personal details</h4>
+                        <label>Full Name</label>
+                        <input type="text" id="name" >
+                        <br>
+                        <br>
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <h4>Payment details</h4>
+                            <label for="amount">Amount(OMR)</label>
+                            <input type="number" id="amount" step="0.01" required>
+                            <small>Enter the amount in Omani Rials, upto two decimal places</small>
+                            <br>
+
+                            <label for="type">Tax Type</label>
+                            <select id="type" name="type">
+                                <option value="vat">VAT</option>
+                                <option value="cit">CIT</option>
+                                <option value="pit">PIT</option>
+                            </select>
+                        </fieldset>
+                        <br>
+                        <label style="align-items: end;" for="agree">I confirm the information above is accurate</label>
+                        <input style="text-align: right;" type="checkbox">
+                        <br>
+                        <button type="submit">Submit Payment</button>
+                        <button type="reset">Clear Form</button>
+                        
+                    </form>
+                </div>
+                <br>
+                <div class="container">
                     <h2>Quick Links</h2>
                     <ul>
                         <li><a href="#">How to file a VAT return</a></li>
@@ -141,9 +178,25 @@
                         <li><a href="#">Contact a support agent</a></li>
                     </ul>
                     <br>
-                    <h3
+                    <h3></h3>
 
                 </div>
+                <br>
+                <div class="container">
+                <footer>
+                    <small> &copy; Taxpayer Portal. All rights reseved.</small>
+                    <p>Support:<a href="#">support@example.com</a> | Phone: <a href="tel+ 12345678">+968 12345678</a></p>
+                    <br>
+                    <nav>
+                        <a href="#"> Praivcy Ploicy</a><br>
+                        <a href="#">Terms of Use</a><br>
+                        <a href="#">Contact Us</a><br>
+                    </nav>
+
+                </footer>
+
+                </div>
+                
             </section>
         </main>
 
