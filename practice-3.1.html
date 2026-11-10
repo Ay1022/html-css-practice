@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taxpayer Portal</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,9 +50,9 @@
         <br>
 
         <main>
-            <section>
                 <section >
                     <h2>Welcome to the Portal</h2>
+                    <div class="line"></div>
 
                     <p>
                         This online system allows registered taxpayers to
@@ -72,19 +74,21 @@
                     </p>
 
                     <figure>
-                        <img src="fig1.png">
+                        <img class="image" src="fig1.png">
                         <figcaption>Figure 1: Overview of the Taxpayer dashboard</figcaption>
                     </figure>
                 </section>
             
                 <br>
                 <div >
-                    <article>
+                    <section>
+                        <article>
                         <h2>Announcement: VAT Filing Deadline Extended</h2>
+                         <div class="line"></div>
                     <p>The deadline for quarterly VAT filing has been extended by two weeks to accommodate the recent system maintenance window. </p>
                     <figure>
-                        <blockquote>
-                            <p>All pending VAT submissions will now be accepted until the end of the month without penalty.</p>
+                        <blockquote class="cont-blockqout">
+                            All pending VAT submissions will now be accepted until the end of the month without penalty.
                         </blockquote>
                         <figcaption>Source:<i>Portal Communications Team</i></figcaption>
 
@@ -92,13 +96,20 @@
                     </figure>
                     
                     </article>
+
+                    </section>
+                    
                 </div>
                 <br>
                 <div >
+                    <section>
+
+                    
                     <h2>Recent Filing Types</h2>
-                    <p>Filing status for the current period</p>
-                    <table style="width: 100%;" border="1" aria-colspan="8" collspaceing="0" >
-                        <thead>
+                     <div class="line"></div>
+                    <p class="table-title">Filing status for the current period</p>
+                    <table >
+                        <thead class="table-thead">
                             <tr>
                             <th scope="col">Tax Type</th>
                             <th scope="col">Filing Period</th>
@@ -107,44 +118,51 @@
                         </thead>
                         <tbody>
                              <tr>
-                            <th scope="row">VAT</th>
-                            <th>Q2 2026</th>
-                            <th>Submitted </th>
+                            <th class="table-thead" scope="row">VAT</th>
+                            <th class="table-content">Q2 2026</th>
+                            <th class="table-content">Submitted </th>
                         </tr>
                         <tr>
-                            <th scope="row">CIT</th>
-                            <th>2025 Annual</th>
-                            <th>Pending</th>
+                            <th class="table-thead" scope="row">CIT</th>
+                            <th class="second-row">2025 Annual</th>
+                            <th class="second-row">Pending</th>
                         </tr>
                         <tr>
-                            <th scope="row">PIT</th>
-                            <th>2025 Annul</th>
-                            <th>Draft </th>
+                            <th class="table-thead" scope="row">PIT</th>
+                            <th class="table-content">2025 Annul</th>
+                            <th class="table-content">Draft </th>
                         </tr>
-                        </tbody>
-                        
-                       
+                        </tbody>  
                     </table>
+                    <div class="progress-section">
+                        <di class="progress-wrraper">
                     <label for="file">Overall filing completaion this quarter:</label>
-                    <progress id="file" max="100" value="70">
-                    </progress><br>
-                    <label for="file">Average review score for submitted filling::</label>
-                    <progress id="file" max="100" value="80">
+                    <progress id="file" max="100" value="70"></progress>
+                    </di>
+                    <div class="progress-wrraper">
+                    <label for="avg">Average review score for submitted filling:</label>
+                    <progress id="avg" max="100" value="80"></progress>
+                    </div>
 
-                    </progress>
+                    </div>
+                    
+                    
+                    </section>
 
                 </div>
                 <br>
                 <div >
+                    <section>
                     <h2>Register a Payment</h2>
+                    <div class="line"></div>
                     <form>
                         <fieldset>
                         <h4>Personal details</h4>
-                        <label>Full Name</label>
+                        <label for="name">Full Name</label>
                         <input type="text" id="name" >
                         <br>
                         <br>
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <input type="email" id="email">
                         </fieldset>
                         <br>
@@ -170,6 +188,7 @@
                         <button type="reset">Clear Form</button>
                         
                     </form>
+                    </section>
                 </div>
                 <br>
                 <div >
@@ -200,7 +219,7 @@
 
                 </div>
                 
-            </section>
+            
         </main>
 
     </div>
