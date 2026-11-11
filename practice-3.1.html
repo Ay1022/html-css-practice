@@ -1,228 +1,257 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taxpayer Portal</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="theme.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <header>
+        <div>
+          <h1>Taxpayer Portal</h1>
+          <p class="paragrahp">Online Tax Services</p>
 
-        <header>
+          <nav class="btn">
+            <a href="/home">Home</a>
+            <a href="./tax-filing.html">Tax Filing</a>
+            <a href="/payment">Payments</a>
+            <a href="/support">Support</a>
+            <a href="/about">About</a>
+          </nav>
+          <div class="line"></div>
+
+          <br />
+        </div>
+        <div>
+          <form>
+            <label for="search-port" class="search-label">Search the portal</label>
             <div>
-                <h1>Taxpayer Portal</h1>
-                <p class="paragrahp">Online Tax Services</p>
+              <input
+                name="search-port"
+                class="search-input"
+                type="text"
+                placeholder="e.g VAT return"
+              />
+              <button class="search-btn">Search</button>
+            </div>
+          </form>
+        </div>
+      </header>
 
-                <nav class="btn">
-                    <a href="/home">Home</a>
-                    <a href="./tax-filing.html">Tax Filing</a>
-                    <a href="/payment">Payments</a>
-                    <a href="/support">Support</a>
-                    <a href="/about">About</a>
-                </nav>
-                <div class="line">
+      <br />
 
-                </div>
+      <main>
+        <section>
+          <h2>Welcome to the Portal</h2>
+          <div class="line"></div>
 
-                <br>
-               
+          <p>
+            This online system allows registered taxpayers to
+            <strong>file returns,</strong>
+            <i>manage payments,</i> and track submissions online. The portal is
+            designed to simplify communication between taxpayers and the tax
+            authority.
+          </p>
 
-                </div>
-                 <div>
-                    <form>
-                    <label class="search-label" >Search the portal</label>
-                    <div>
-                        <input class="search-input" type="text" placeholder="e.g VAT return">
-                        <button class="search-btn">Search</button>
-                    </div>
-                </form>
-                 </div>
-                
-            
-        </header>
+          <p>
+            Use the navigation menu above to explore filing options, review your
+            payment history, or contact support if you need assistance.
+            <mark
+              >New users must verify their email before submitting a first
+              return.</mark
+            >
+          </p>
 
-        <br>
+          <p>Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.</p>
 
-        <main>
-                <section >
-                    <h2>Welcome to the Portal</h2>
-                    <div class="line"></div>
+          <figure>
+            <img class="image" src="fig1.png" />
+            <figcaption>
+              Figure 1: Overview of the Taxpayer dashboard
+            </figcaption>
+          </figure>
+        </section>
 
-                    <p>
-                        This online system allows registered taxpayers to
-                        <strong>file returns,</strong>
-                        <i>manage payments,</i> and track submissions online.
-                        The portal is designed to simplify communication
-                        between taxpayers and the tax authority.
-                    </p>
+        <br />
+        <div>
+          <section>
+            <article>
+              <h2>Announcement: VAT Filing Deadline Extended</h2>
+              <div class="line"></div>
+              <p>
+                The deadline for quarterly VAT filing has been extended by two
+                weeks to accommodate the recent system maintenance window.
+              </p>
+              <figure>
+                <blockquote class="cont-blockqout">
+                  All pending VAT submissions will now be accepted until the end
+                  of the month without penalty.
+                </blockquote>
+                <figcaption>
+                  Source:<i>Portal Communications Team</i>
+                </figcaption>
+              </figure>
+            </article>
+          </section>
+        </div>
+        <br />
+        <div>
+          <section>
+            <h2>Recent Filing Types</h2>
+            <div class="line"></div>
+            <p class="table-title">Filing status for the current period</p>
+            <table>
+              <thead class="table-thead">
+                <tr>
+                  <th scope="col">Tax Type</th>
+                  <th scope="col">Filing Period</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="table-thead" scope="row">VAT</th>
+                  <th class="table-content">Q2 2026</th>
+                  <th class="table-content">Submitted</th>
+                </tr>
+                <tr>
+                  <th class="table-thead" scope="row">CIT</th>
+                  <th class="second-row">2025 Annual</th>
+                  <th class="second-row">Pending</th>
+                </tr>
+                <tr>
+                  <th class="table-thead" scope="row">PIT</th>
+                  <th class="table-content">2025 Annul</th>
+                  <th class="table-content">Draft</th>
+                </tr>
+              </tbody>
+            </table>
+            <div class="progress-section">
+              <di class="progress-wrraper">
+                <label for="file"
+                  >Overall filing completaion this quarter:</label
+                >
+                <progress id="file" max="100" value="70"></progress>
+              </di>
+              <div class="progress-wrraper">
+                <label for="avg"
+                  >Average review score for submitted filling:</label
+                >
+                <progress id="avg" max="100" value="80"></progress>
+              </div>
+            </div>
+          </section>
+        </div>
+        <br />
+        <div>
+          <section class="register-payment">
+            <h2>Register a Payment</h2>
+            <div class="line"></div>
+            <form>
+              <div class="secure-element">Secure</div>
+              <fieldset>
+                <h4>Personal details</h4>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" />
+                <br />
+                <br />
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+              </fieldset>
+              <br />
+              <fieldset>
+                <h4>Payment details</h4>
+                <label for="amount">Amount(OMR)</label>
+                <input type="number" id="amount" step="0.01" required />
+                <small
+                  >Enter the amount in Omani Rials, upto two decimal
+                  places</small
+                >
+                <br />
 
-                    <p>
-                        Use the navigation menu above to explore filing options,
-                        review your payment history, or contact support if you
-                        need assistance.
-                        <mark>New users must verify their email before submitting a first return.</mark>
-                    </p>
+                <label for="type">Tax Type</label>
+                <select id="type" name="type">
+                  <option value="vat">VAT</option>
+                  <option value="cit">CIT</option>
+                  <option value="pit">PIT</option>
+                </select>
+              </fieldset>
+              <br />
+              <div class="checkbox-wrapper">
+                <input style="text-align: right" type="checkbox" />
+                <label style="align-items: end" for="agree"
+                  >I confirm the information above is accurate</label
+                >
+              </div>
 
-                    <p>
-                        Filing types include <u>VAT</u>, <u>CIT</u>, and <u>PIT</u>.
-                    </p>
+              <br />
+              <div class="wrapper-btn">
+                <button type="submit">Submit Payment</button>
+                <button type="reset">Clear Form</button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <br />
+        <div class="final-info">
+          <div >
+            <h2>Quick Links</h2>
+            <div class="line"></div>
+            <ul>
+              <li><a href="#">How to file a VAT return</a></li>
+              <li><a href="#">Payment methods accepted</a></li>
+              <li><a href="#">Download tax certificate</a></li>
+              <li><a href="#">Contact a support agent</a></li>
+            </ul>
+          </div>
 
-                    <figure>
-                        <img class="image" src="fig1.png">
-                        <figcaption>Figure 1: Overview of the Taxpayer dashboard</figcaption>
-                    </figure>
-                </section>
-            
-                <br>
-                <div >
-                    <section>
-                        <article>
-                        <h2>Announcement: VAT Filing Deadline Extended</h2>
-                         <div class="line"></div>
-                    <p>The deadline for quarterly VAT filing has been extended by two weeks to accommodate the recent system maintenance window. </p>
-                    <figure>
-                        <blockquote class="cont-blockqout">
-                            All pending VAT submissions will now be accepted until the end of the month without penalty.
-                        </blockquote>
-                        <figcaption>Source:<i>Portal Communications Team</i></figcaption>
-
-                        
-                    </figure>
-                    
-                    </article>
-
-                    </section>
-                    
-                </div>
-                <br>
-                <div >
-                    <section>
-
-                    
-                    <h2>Recent Filing Types</h2>
-                     <div class="line"></div>
-                    <p class="table-title">Filing status for the current period</p>
-                    <table >
-                        <thead class="table-thead">
-                            <tr>
-                            <th scope="col">Tax Type</th>
-                            <th scope="col">Filing Period</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                             <tr>
-                            <th class="table-thead" scope="row">VAT</th>
-                            <th class="table-content">Q2 2026</th>
-                            <th class="table-content">Submitted </th>
-                        </tr>
-                        <tr>
-                            <th class="table-thead" scope="row">CIT</th>
-                            <th class="second-row">2025 Annual</th>
-                            <th class="second-row">Pending</th>
-                        </tr>
-                        <tr>
-                            <th class="table-thead" scope="row">PIT</th>
-                            <th class="table-content">2025 Annul</th>
-                            <th class="table-content">Draft </th>
-                        </tr>
-                        </tbody>  
-                    </table>
-                    <div class="progress-section">
-                        <di class="progress-wrraper">
-                    <label for="file">Overall filing completaion this quarter:</label>
-                    <progress id="file" max="100" value="70"></progress>
-                    </di>
-                    <div class="progress-wrraper">
-                    <label for="avg">Average review score for submitted filling:</label>
-                    <progress id="avg" max="100" value="80"></progress>
-                    </div>
-
-                    </div>
-                    
-                    
-                    </section>
-
-                </div>
-                <br>
-                <div >
-                    <section>
-                    <h2>Register a Payment</h2>
-                    <div class="line"></div>
-                    <form>
-                        <fieldset>
-                        <h4>Personal details</h4>
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" >
-                        <br>
-                        <br>
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                        </fieldset>
-                        <br>
-                        <fieldset>
-                            <h4>Payment details</h4>
-                            <label for="amount">Amount(OMR)</label>
-                            <input type="number" id="amount" step="0.01" required>
-                            <small>Enter the amount in Omani Rials, upto two decimal places</small>
-                            <br>
-
-                            <label for="type">Tax Type</label>
-                            <select id="type" name="type">
-                                <option value="vat">VAT</option>
-                                <option value="cit">CIT</option>
-                                <option value="pit">PIT</option>
-                            </select>
-                        </fieldset>
-                        <br>
-                        <label style="align-items: end;" for="agree">I confirm the information above is accurate</label>
-                        <input style="text-align: right;" type="checkbox">
-                        <br>
-                        <button type="submit">Submit Payment</button>
-                        <button type="reset">Clear Form</button>
-                        
-                    </form>
-                    </section>
-                </div>
-                <br>
-                <div >
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="#">How to file a VAT return</a></li>
-                        <li><a href="#">Payment methods accepted</a></li>
-                        <li><a href="#">Download tax certificate</a></li>
-                        <li><a href="#">Contact a support agent</a></li>
-                    </ul>
-                    <br>
-                    <h3></h3>
-
-                </div>
-                <br>
-                <div >
-                <footer>
-                    <small> &copy; Taxpayer Portal. All rights reseved.</small>
-                    <p>Support:<a href="#">support@example.com</a> | Phone: <a href="tel+ 12345678">+968 12345678</a></p>
-                    <br>
-                    <nav>
-                        <a href="#"> Praivcy Ploicy</a><br>
-                        <a href="#">Terms of Use</a><br>
-                        <a href="#">Contact Us</a><br>
-                    </nav>
-
-                </footer>
-
-                </div>
-                
-            
-        </main>
-
+          <br />
+          <h3>Key Terms</h3>
+          <div >
+            <h4>VAT</h4>
+          <p>A tax added to most goods and services at the point of sale.</p>
+          <h4>Filing Period</h4>
+          <p>The date range a given return or payment covers.</p>
+          </div>
+          
+          <div class="feq">
+            <h3>Frequently Asked Questions</h3>
+            <details name="deadline">
+                <summary>What happens if I miss a filing deadline?</summary>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+                     when designers at Letraset and James Mosley, 
+                </p>
+            </details>
+            <details name="submited">
+                <summary>Can I edit a submitted return?</summary>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+                     when designers at Letraset and James Mosley, 
+                </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <small> &copy; Taxpayer Portal. All rights reseved.</small>
+        <p>
+          Support:<a href="#">support@example.com</a> | Phone:
+          <a href="tel+ 12345678">+968 12345678</a>
+        </p>
+        <br />
+        <nav>
+          <a href="#"> Praivcy Ploicy</a><br />
+          <a href="#">Terms of Use</a><br />
+          <a href="#">Contact Us</a><br />
+        </nav>
+      </footer>
     </div>
-
-</body>
+  </body>
 </html>
